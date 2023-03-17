@@ -21,6 +21,10 @@ public class Basic_Motor_function : MonoBehaviour
             Goal = Goal_2;
         }
         transform.position = Vector3.MoveTowards(transform.position, Goal, speed * Time.deltaTime);
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+
+        }
         if (Input.GetKeyDown(KeyCode.W))
         {
             ActionDecider(1, 0);
